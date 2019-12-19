@@ -50,7 +50,7 @@ Step 1: Clone the project https://github.com/mjohnbritto/TransactionValidator.gi
 Step 2: Import it to any IDE(Eclipse preferred) as maven project.
 Step 3: Build the project(mvn clean install)
 Step 4: Since the application is jar packaging you will find the TransactionValidator.jar in the \target folder
-You can also download and use the jar file from https://github.com/mjohnbritto/TransactionValidator/blob/master/TransactionValidator.jar
+You can also download and use the jar file from https://github.com/mjohnbritto/TransactionValidator/blob/master/src/main/resources/static/Jar/TransactionValidator.jar
  </pre>
  By now you have the executable jar file, Let's see how to use this below.
  
@@ -92,3 +92,8 @@ Sample failed transactions report will look like,
 115137                   Flowers for Jan Theuß 
 </pre>
 <h3> Resources</h3>
+The sample statement files available here https://github.com/mjohnbritto/TransactionValidator/tree/master/src/main/resources/static/input
+
+The sample report files available here https://github.com/mjohnbritto/TransactionValidator/tree/master/src/main/resources/static/output
+
+************************************************************ Thank you *************************************************************
