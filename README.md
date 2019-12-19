@@ -94,7 +94,8 @@ Sample failed transactions report will look like,
 115137                   Flowers for Jan Theuß 
 </pre>
 <h3> Resources</h3>
-   The executable jar file available here                 https://github.com/mjohnbritto/TransactionValidator/blob/master/src/main/resources/static/Jar/TransactionValidator.jar4
+   The executable jar file available here                 https://github.com/mjohnbritto/TransactionValidator/blob/master/src/main/resources/static/Jar/TransactionValidator.jar
+
 
 The sample statement files available here https://github.com/mjohnbritto/TransactionValidator/tree/master/src/main/resources/static/input
 
