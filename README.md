@@ -87,8 +87,8 @@ Sample failed transactions report will look like,
 
 <pre>
 <b>Transaction Reference 	 Description </b>
-154270	 	  Candy for Peter de Vries
-140269		   Tickets for Vincent Dekker
-115137	 	  Flowers for Jan Theuß 
+154270                   Candy for Peter de Vries
+140269                   Tickets for Vincent Dekker
+115137                   Flowers for Jan Theuß 
 </pre>
 <h3> Resources</h3>
