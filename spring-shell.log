@@ -1,0 +1,2 @@
+1576670933532:validate-transactions -N records -F csv -I C:\\\\Users\\\\johnbrittom\\\\Downloads\\\\Assignment\\\\raboassignment -O C:\\\\Users\\\\johnbrittom\\\\Downloads\\\\Assignment\\\\raboassignment\\\\output
+1576675909871:validate-transactions -N records -F xml -I C:\\\\Users\\\\johnbrittom\\\\Downloads\\\\Assignment\\\\raboassignment -O C:\\\\Users\\\\johnbrittom\\\\Downloads\\\\Assignment\\\\raboassignment\\\\output
