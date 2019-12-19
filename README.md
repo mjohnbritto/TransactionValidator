@@ -45,13 +45,13 @@ An application to read and validate the Rabobank's transaction statements. The f
 The application also supports two types of files they are CSV and XML
 
 <h2> How to use/consume this application?</h2>
-
+<pre>
 Step 1: Clone the project https://github.com/mjohnbritto/TransactionValidator.git
 Step 2: Import it to any IDE(Eclipse preferred) as maven project.
 Step 3: Build the project(mvn clean install)
 Step 4: Since the application is jar packaging you will find the TransactionValidator.jar in the \target folder
 You can also download and use the jar file from https://github.com/mjohnbritto/TransactionValidator/blob/master/TransactionValidator.jar
- 
+ </pre>
  By now you have the executable jar file, Let's see how to use this below.
  
  This application exposes a shell command, <b>validate-transactions</b>. This command has following arguments
@@ -70,3 +70,25 @@ You can also download and use the jar file from https://github.com/mjohnbritto/T
   
   <pre><em>java -jar TransactionValidator.jar validate-transactions -N records -F xml -I C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment -O C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment\\output</em></pre>
   
+  
+ <h3>Output - Failed Transactions report</h3>
+ The application will validate all the transactions against two conditions as given below.
+ <ul>
+<li>
+<p>all transaction references should be unique</p>
+</li>
+<li>
+<p>the end balance needs to be validated</p>
+</li>
+</ul>
+
+The failed transactions report will be generated in the given path to the arguments <b>"-O" or "--outputpath"</b>
+Sample failed transactions report will look like,
+
+<pre>
+<b>Transaction Reference 	 Description </b>
+154270	 	  Candy for Peter de Vries
+140269		   Tickets for Vincent Dekker
+115137	 	  Flowers for Jan Theuß 
+</pre>
+<h3> Resources</h3>
