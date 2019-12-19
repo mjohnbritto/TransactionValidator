@@ -55,18 +55,18 @@ You can also download and use the jar file from https://github.com/mjohnbritto/T
  By now you have the executable jar file, Let's see how to use this below.
  
  This application exposes a shell command, <b>validate-transactions</b>. This command has following arguments
-    "-N" or "--filename"   --> to specify the name of the statement.
-    "-F" or "--fileformat" --> to specify the file format (csv/xml).
-    "-I" or "--inputpath"  --> to specify the file path, where the statement file exist.
-    "-O" or "--outputpath" --> to specify the file path, where the failed transactios report will be generated.
-  All the arguments are mandatory we need to invoke the <b>validate-transactions<b> command with all arguments. The examples given below.
+    <pre><b>"-N" or "--filename"</b>   --> to specify the name of the statement.
+    <b>"-F" or "--fileformat"</b> --> to specify the file format (csv/xml).
+    <b>"-I" or "--inputpath"</b>  --> to specify the file path, where the statement file exist.
+    <b>"-O" or "--outputpath"</b> --> to specify the file path, where the failed transactios report will be generated.</pre>
+  All the arguments are mandatory we need to invoke the <b>validate-transactions</b> command with all arguments. The examples given below.
   
   
   <b>To invoke command for csv type files, the command given below</b>
   
-  <em>java -jar target\TransactionValidator.jar validate-transactions -N records -F csv -I C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment -O C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment\\output</em>
+  <pre><em>java -jar TransactionValidator.jar validate-transactions -N records -F csv -I C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment -O C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment\\output</em></pre>
   
   <b>To invoke command for xml type files, the command given below</b>
   
-  <em>java -jar target\TransactionValidator.jar validate-transactions -N records -F xml -I C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment -O C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment\\output</em>
+  <pre><em>java -jar TransactionValidator.jar validate-transactions -N records -F xml -I C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment -O C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment\\output</em></pre>
   
