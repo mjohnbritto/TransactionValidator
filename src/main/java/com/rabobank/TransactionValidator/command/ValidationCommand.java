@@ -14,7 +14,8 @@ import com.rabobank.TransactionValidator.utils.Constants;
  * 
  * @author johnbrittom
  * 
- * This class creates a command called validate-transactions which will validate the rabobank transactions statement
+ *         This class creates a command called validate-transactions which will
+ *         validate the rabobank transactions statement
  */
 
 @ShellComponent
@@ -25,15 +26,20 @@ public class ValidationCommand {
 
 	Logger LOGGER = LoggerFactory.getLogger(ValidationCommand.class);
 
-	
 	/**
 	 * This method creates and exposes command validate-transactions
-	 * @param statementFilename -> the name of the statement
-	 * @param fileFormat -> the file format (csv/xml)
-	 * @param inputPath -> the location where the statement file exists
-	 * @param outputPath - > the location where the failed transaction report needs to be generated
+	 * 
+	 * @param statementFilename
+	 *            -> the name of the statement
+	 * @param fileFormat
+	 *            -> the file format (csv/xml)
+	 * @param inputPath
+	 *            -> the location where the statement file exists
+	 * @param outputPath
+	 *            - > the location where the failed transaction report needs to
+	 *            be generated
 	 */
-	
+
 	@ShellMethod("Validate the bank transaction statements")
 	public void validateTransactions(@ShellOption(value = { "-N", "--filename" }) String statementFilename,
 			@ShellOption(value = { "-F", "--fileformat" }) String fileFormat,
@@ -42,13 +48,13 @@ public class ValidationCommand {
 
 		LOGGER.info("=====> Validating the \"{}\" statement of type \"{}\" from \"{}\" and output will be \"{}\"",
 				new Object[] { statementFilename, fileFormat, inputPath, outputPath });
-		
+
 		try {
-			if(Constants.FILE_FORMAT_CSV.equalsIgnoreCase(fileFormat)){
+			if (Constants.FILE_FORMAT_CSV.equalsIgnoreCase(fileFormat)) {
 				validationCommandService.validateCSVStatements(statementFilename, fileFormat, inputPath, outputPath);
-			}else if(Constants.FILE_FORMAT_XML.equalsIgnoreCase(fileFormat)){
+			} else if (Constants.FILE_FORMAT_XML.equalsIgnoreCase(fileFormat)) {
 				validationCommandService.validateXMLStatements(statementFilename, fileFormat, inputPath, outputPath);
-			}else{
+			} else {
 				LOGGER.error("\nPlease enter a valid fileformat(csv/xml)");
 			}
 		} catch (Exception exception) {

@@ -12,6 +12,13 @@ import org.springframework.shell.Input;
 import org.springframework.shell.InputProvider;
 import org.springframework.shell.Shell;
 
+/**
+ * 
+ * @author johnbrittom
+ *
+ *         The shell runner class to capture the command and input arguments and
+ *         then invoking the relevant shell command.
+ */
 @Order(0)
 public class NonInteractiveShellRunner implements ApplicationRunner {
 
