@@ -50,8 +50,8 @@ Step 1: Clone the project https://github.com/mjohnbritto/TransactionValidator.gi
 Step 2: Import it to any IDE(Eclipse preferred) as maven project.
 Step 3: Build the project(mvn clean install)
 Step 4: Since the application is jar packaging you will find the TransactionValidator.jar in the \target folder
-You can also download and use the jar file from https://github.com/mjohnbritto/TransactionValidator/blob/master/src/main/resources/static/Jar/TransactionValidator.jar
- </pre>
+You can also download and use the jar file from</pre> https://github.com/mjohnbritto/TransactionValidator/blob/master/src/main/resources/static/Jar/TransactionValidator.jar
+
  By now you have the executable jar file, Let's see how to use this below.
  
  This application exposes a shell command, <b>validate-transactions</b>. This command has following arguments
@@ -96,4 +96,4 @@ The sample statement files available here https://github.com/mjohnbritto/Transac
 
 The sample report files available here https://github.com/mjohnbritto/TransactionValidator/tree/master/src/main/resources/static/output
 
-************************************************************ Thank you *************************************************************
+************************************************** Thank you ********************************************************
