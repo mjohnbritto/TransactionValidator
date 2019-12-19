@@ -50,19 +50,21 @@ Step 1: Clone the project https://github.com/mjohnbritto/TransactionValidator.gi
 Step 2: Import it to any IDE(Eclipse preferred) as maven project.
 Step 3: Build the project(mvn clean install)
 Step 4: Since the application is jar packaging you will find the TransactionValidator.jar in the \target folder
-You can also download and use the jar file from</pre> https://github.com/mjohnbritto/TransactionValidator/blob/master/src/main/resources/static/Jar/TransactionValidator.jar
+</pre>
+     You can also download and use the jar file from https://github.com/mjohnbritto/TransactionValidator/blob/master/src/main/resources/static/Jar/TransactionValidator.jar
 
- By now you have the executable jar file, Let's see how to use this below.
+
+By now you have the executable jar file, Let's see how to use this below.
  
- This application exposes a shell command, <b>validate-transactions</b>. This command has following arguments
+This application exposes a shell command, <b>validate-transactions</b>. This command has following arguments
     <pre><b>"-N" or "--filename"</b>   --> to specify the name of the statement.
     <b>"-F" or "--fileformat"</b> --> to specify the file format (csv/xml).
     <b>"-I" or "--inputpath"</b>  --> to specify the file path, where the statement file exist.
     <b>"-O" or "--outputpath"</b> --> to specify the file path, where the failed transactios report will be generated.</pre>
-  All the arguments are mandatory we need to invoke the <b>validate-transactions</b> command with all arguments. The examples given below.
+All the arguments are mandatory we need to invoke the <b>validate-transactions</b> command with all arguments. The examples given below.
   
   
-  <b>To invoke command for csv type files, the command given below</b>
+<b>To invoke command for csv type files, the command given below</b>
   
   <pre><em>java -jar TransactionValidator.jar validate-transactions -N records -F csv -I C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment -O C:\\Users\\johnbrittom\\Downloads\\Assignment\\raboassignment\\output</em></pre>
   
@@ -92,6 +94,8 @@ Sample failed transactions report will look like,
 115137                   Flowers for Jan Theuß 
 </pre>
 <h3> Resources</h3>
+   The executable jar file available here                 https://github.com/mjohnbritto/TransactionValidator/blob/master/src/main/resources/static/Jar/TransactionValidator.jar4
+
 The sample statement files available here https://github.com/mjohnbritto/TransactionValidator/tree/master/src/main/resources/static/input
 
 The sample report files available here https://github.com/mjohnbritto/TransactionValidator/tree/master/src/main/resources/static/output
